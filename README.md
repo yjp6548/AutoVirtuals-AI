@@ -13,7 +13,7 @@
 - ✅ 订单管理：后台实时查看订单/收款/交付记录
 
 ## 📦 快速使用（小白友好）
-1. 复制项目仓库：`git clone https://github.com/你的GitHub用户名/AutoVirtuals-AI.git`
+1. 复制项目仓库：`git clone https://github.com/yjp6548/AutoVirtuals-AI.git`
 2. 打开index.html文件，直接修改配置（收款地址/产品信息）
 3. 上传到你的独立站，或直接用GitHub Pages部署
 4. 开启自动化交付，全程不用写一行代码！
@@ -43,7 +43,7 @@
 - 自动交付演示：https://xx.com
 
 ## 🤝 贡献者
-- 你的GitHub用户名 <你的邮箱>
+- 你的GitHub用户名 yjp6548
 - AI Engineer Team（由GPT-4/Claude/Agentic Engineering驱动）
 
 ## 📄 许可证
