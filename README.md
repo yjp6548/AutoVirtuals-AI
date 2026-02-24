@@ -39,8 +39,8 @@
 
 ## 📸 项目演示
 （后续AI自动生成演示图/视频，直接粘贴链接即可）
-- 订单页演示：https://xxx.com
-- 自动交付演示：https://xxx.com
+- 订单页演示：https://xx.com
+- 自动交付演示：https://xx.com
 
 ## 🤝 贡献者
 - 你的GitHub用户名 <你的邮箱>
