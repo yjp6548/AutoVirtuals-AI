@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoVirtuals AI - 虚拟产品自动化交付系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入AI客服和支付验证依赖 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 项目标题 -->
+        <header class="header">
+            <h1>AutoVirtuals AI 🌍</h1>
+            <p>零代码虚拟产品自动化交付工具箱 | 跨境卖家专属</p>
+        </header>
+
+        <!-- 产品信息区 -->
+        <section class="product-section">
+            <div class="product-card">
+                <h2 id="productName">Loading...</h2>
+                <p id="productDesc" class="product-desc">Loading...</p>
+                <div class="price-tag" id="productPrice">Loading...</div>
+            </div>
+        </section>
+
+        <!-- 收款方式选择 -->
+        <section class="payment-section">
+            <h3>选择收款方式</h3>
+            <div class="payment-options">
+                <!-- Web3收款（推荐） -->
+                <div class="payment-card">
+                    <h4>USDT (TRC20)</h4>
+                    <p id="usdtAddress">Loading...</p>
+                    <button class="copy-btn" onclick="copyToClipboard('usdtAddress')">复制地址</button>
+                </div>
+                <div class="payment-card">
+                    <h4>USDC (Polygon)</h4>
+                    <p id="usdcAddress">Loading...</p>
+                    <button class="copy-btn" onclick="copyToClipboard('usdcAddress')">复制地址</button>
+                </div>
+                <!-- 传统收款 -->
+                <div class="payment-card">
+                    <h4>Stripe / PayPal</h4>
+                    <button class="pay-btn" onclick="redirectToPayment()">立即付款</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 自动交付区 -->
+        <section class="deliver-section">
+            <h3>付款后自动交付</h3>
+            <div class="deliver-box" id="deliverContent">
+                <p>完成付款后，此处将自动显示你的产品（密钥/链接/激活码）</p>
+                <button class="verify-btn" onclick="verifyPayment()">验证付款并获取产品</button>
+            </div>
+        </section>
+
+        <!-- AI客服区 -->
+        <section class="ai-chat-section">
+            <h3>AI智能客服</h3>
+            <div class="chat-box" id="aiReply">Loading...</div>
+            <input type="text" id="userMsg" placeholder="输入你的问题..." class="chat-input">
+            <button onclick="sendMsg()" class="send-btn">发送</button>
+        </section>
+    </div>
+
+    <!-- 引入配置和核心逻辑 -->
+    <script src="config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
