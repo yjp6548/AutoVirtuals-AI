@@ -1,0 +1,176 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 头部样式 */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* 产品卡片 */
+.product-section {
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-card h2 {
+    color: #2980b9;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.product-desc {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price-tag {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* 收款方式区 */
+.payment-section {
+    margin-bottom: 30px;
+}
+
+.payment-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.payment-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.payment-card h4 {
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.copy-btn, .pay-btn, .verify-btn, .send-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.copy-btn:hover, .pay-btn:hover, .verify-btn:hover, .send-btn:hover {
+    background: #2980b9;
+}
+
+/* 交付区 */
+.deliver-section {
+    margin-bottom: 30px;
+}
+
+.deliver-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.deliver-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 100px;
+    text-align: center;
+}
+
+/* AI客服区 */
+.ai-chat-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.chat-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    min-height: 80px;
+    text-align: left;
+}
+
+.chat-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.send-btn {
+    width: 25%;
+}
+
+/* 响应式适配 */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    .chat-input {
+        width: 60%;
+    }
+    .send-btn {
+        width: 35%;
+    }
+}
